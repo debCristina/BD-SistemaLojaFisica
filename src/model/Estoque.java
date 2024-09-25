@@ -5,7 +5,7 @@ public class Estoque {
     private int idProduto;
     private int quantidade;
 
-    public int getIdEstoque() {
+    public int getIdEstoque () {
         return idEstoque;
     }
 

@@ -5,7 +5,7 @@ public class Funcionario {
     private String nome;
     private String cargo;
 
-    public int getIdFuncionario() {
+    public int getIdFuncionario () {
         return idFuncionario;
     }
 

@@ -13,7 +13,7 @@ public class Cliente {
         this.idCliente = idCliente;
     }
 
-    public int getTelefone() {
+    public int getTelefone () {
         return telefone;
     }
 

@@ -19,7 +19,7 @@ public class ClienteDAO {
         this.conn = this.conexao.getConexao();
     }
 
-    public void inserir(Cliente cliente) {
+    public void inserir (Cliente cliente) {
         String sql = "INSERT INTO cliente(telefone, nome) VALUES (?, ?)";
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
@@ -32,7 +32,7 @@ public class ClienteDAO {
         }
     }
 
-    public void atualizar(Cliente cliente) {
+    public void atualizar (Cliente cliente) {
         String sql = "UPDATE cliente SET telefone = ?, nome = ? WHERE id_cliente = ?";
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
@@ -46,7 +46,7 @@ public class ClienteDAO {
         }
     }
 
-    public void remover(int idCliente) {
+    public void remover (int idCliente) {
         String sql = "DELETE FROM cliente WHERE id_cliente = ?";
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
