@@ -1,16 +1,16 @@
 package model;
 
 public class Funcionario {
-    private int id_funcionario;
+    private int idFuncionario;
     private String nome;
     private String cargo;
 
-    public int getId_funcionario() {
-        return id_funcionario;
+    public int getIdFuncionario() {
+        return idFuncionario;
     }
 
-    public void setId_funcionario(int id_funcionario) {
-        this.id_funcionario = id_funcionario;
+    public void setIdFuncionario(int idFuncionario) {
+        this.idFuncionario = idFuncionario;
     }
 
     public String getNome() {

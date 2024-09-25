@@ -1,4 +1,4 @@
-package conexao;
+package util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ public class ConexaoUtil {
     private String porta = "3306";
     private String nome = "bd_lojafisica";
     private String usuario = "root";
-    private String senha = "mySQLPASSWORDroot.1";
+    private String senha = System.getenv("DB_MYSQL_PASSWORD");
 
     private String url = "jdbc:mysql://"+caminho+":"+porta+"/"+nome+"?serverTimezone=UTC&useSSL=false";
 
