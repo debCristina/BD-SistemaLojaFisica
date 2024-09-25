@@ -12,7 +12,7 @@ public class ConexaoUtil {
 
     private String url = "jdbc:mysql://"+caminho+":"+porta+"/"+nome+"?serverTimezone=UTC&useSSL=false";
 
-    public Connection getConexao() {
+    public Connection getConexao () {
         try {
             Connection conn = DriverManager.getConnection(url, usuario, senha);
             return conn;
