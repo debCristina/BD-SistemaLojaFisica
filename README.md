@@ -63,7 +63,7 @@ bash
 
    ```
    
-- Configure a variável de ambiente ${DB_MYSQL_PASSWORD} pelo valor específicos do seu ambiente de desenvolvimento.
+- Configure o caminho, porta de execução, nome do banco de dados, usuario e a variável de ambiente ${DB_MYSQL_PASSWORD} peloa valores específicos do seu ambiente de desenvolvimento.
 - Abra o projeto em sua IDE java preferida.
 - Execute a aplicação e aproveite as funcionalidades disponíveis.
 
