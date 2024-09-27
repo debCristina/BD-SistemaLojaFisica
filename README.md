@@ -35,18 +35,10 @@ Este projeto foi desenvolvido para otimizar a gestão de uma loja física, com f
 
 
 ## 📊 Modelos de Banco de Dados
-
 ### Modelo Conceitual
-Aqui está o *Modelo Conceitual*, que descreve as entidades e seus relacionamentos principais no sistema.
-
-![Modelo Conceitual](#)
-
-
+![Modelo Conceitual](/src/images/modelo_conceitual.png)
 
 ### Modelo Lógico
-Aqui está o *Modelo Conceitual*, que descreve as entidades e seus relacionamentos principais no sistema.
-
-![modelo logico](https://github.com/user-attachments/assets/d38836b4-363f-4efe-9cef-d3b72ca43f30)
 
 ### 
 
