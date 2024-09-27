@@ -5,6 +5,7 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/JDBC-8-blue">
 <img alt="Static Badge" src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-green">
 </p>
+
 ## 🛍 Visão Geral
 
 Bem-vindo ao *Sistema de Controle de Vendas em Loja Física*!  
