@@ -1,5 +1,10 @@
-# Sistema de Controle de Vendas em Loja Física
-
+<h1 align="center">Sistema de gerenciamento de loja física</h1>
+<p align="center">
+<img alt="Static Badge" src="https://img.shields.io/badge/Java-17-green">
+<img alt="Static Badge" src="https://img.shields.io/badge/MySQL-8.0-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/JDBC-8-blue">
+<img alt="Static Badge" src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-green">
+</p>
 ## 🛍 Visão Geral
 
 Bem-vindo ao *Sistema de Controle de Vendas em Loja Física*!  
@@ -24,9 +29,7 @@ Este projeto foi desenvolvido para otimizar a gestão de uma loja física, com f
 - Cadastro e controle de funcionários:  Registre e gerencie os funcionários responsáveis pelas vendas.
 
 ## 🛠 Tecnologias Utilizadas
-
--
-- 1[MySQl](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white): Backend e operações de integração com o banco de dados.
+- *Java*: Backend e operações de integração com o banco de dados.
 - *MySQL*: Banco de dados relacional para armazenamento dos dados.
 - *JDBC*: API para conexão e manipulação do banco de dados MySQL.
 
@@ -34,6 +37,11 @@ Este projeto foi desenvolvido para otimizar a gestão de uma loja física, com f
 ## 📊 Modelos de Banco de Dados
 
 ### Modelo Conceitual
+Aqui está o *Modelo Conceitual*, que descreve as entidades e seus relacionamentos principais no sistema.
+
+![Modelo Conceitual](#)
+
+
 
 ### Modelo Lógico
 Aqui está o *Modelo Conceitual*, que descreve as entidades e seus relacionamentos principais no sistema.
