@@ -36,10 +36,10 @@ Este projeto foi desenvolvido para otimizar a gestão de uma loja física, com f
 
 ## 📊 Modelos de Banco de Dados
 ### Modelo Conceitual
-![Modelo Conceitual](/src/images/modelo_conceitual.png)
+![Modelo Conceitual](src/images/ModeloConceitual.png)
 
 ### Modelo Lógico
-
+![Modelo Conceitual](src/images/ModeloLogico.png)
 ### 
 
 
