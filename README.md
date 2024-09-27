@@ -36,11 +36,19 @@ Este projeto foi desenvolvido para otimizar a gestão de uma loja física, com f
 
 ## 📊 Modelos de Banco de Dados
 ### Modelo Conceitual
-<<<<<<< HEAD
-![Modelo Conceitual](/database/modelo_conceitual.png)
-<img src="src/images/ModeloConceitual.png" alt="Modelo Conceitual" width="600" height="310">
+<img src="src/database/ModeloConceitual.png" alt="Modelo Conceitual" width="600" height="310">
 
 ### Modelo Lógico
 <img src="src/database/ModeloLogico.png" alt="Modelo Conceitual" width="600" height="310">
+
+
+## 💻 Como Executar o Projeto
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/usuario/projeto-vendas-loja.git
+   ```
+   
+3. Configure o banco de dados MySQL e importe o script SQL disponível na pasta /database.
+4. Execute a aplicação Java no seu ambiente de desenvolvimento.
 
 
