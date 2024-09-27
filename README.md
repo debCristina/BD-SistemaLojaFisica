@@ -38,11 +38,9 @@ Este projeto foi desenvolvido para otimizar a gestão de uma loja física, com f
 ### Modelo Conceitual
 <<<<<<< HEAD
 ![Modelo Conceitual](/database/modelo_conceitual.png)
-=======
 <img src="src/images/ModeloConceitual.png" alt="Modelo Conceitual" width="600" height="310">
->>>>>>> 7df01b7d119cd710eae851b9758c0a1bbb47986d
 
 ### Modelo Lógico
-<img src="src/images/ModeloLogico.png" alt="Modelo Conceitual" width="600" height="310">
+<img src="src/database/ModeloLogico.png" alt="Modelo Conceitual" width="600" height="310">
 
 
