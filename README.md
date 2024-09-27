@@ -43,12 +43,42 @@ Este projeto foi desenvolvido para otimizar a gestão de uma loja física, com f
 
 
 ## 💻 Como Executar o Projeto
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/usuario/projeto-vendas-loja.git
+1. Clone este repositório
+   
+ ```
+bash
+   git clone https://github.com/debCristina/literalura.git
+```
+2. Importe execute o script SQL localizado na pasta /database para estruturar as tabelas e dados iniciais.
+   
+3.  No arquivo `src/util/ConexaoUtil` configure com suas informações
+
+   ```
+    private String caminho = "localhost";
+    private String porta = "3306";
+    private String nomeBancoDeDados = "bd_lojafisica";
+    private String usuario = "root";
+    private String senha = System.getenv("DB_MYSQL_PASSWORD");
+
    ```
    
-3. Configure o banco de dados MySQL e importe o script SQL disponível na pasta /database.
-4. Execute a aplicação Java no seu ambiente de desenvolvimento.
+- Configure a variável de ambiente ${DB_MYSQL_PASSWORD} pelo valor específicos do seu ambiente de desenvolvimento.
+- Abra o projeto em sua IDE java preferida.
+- Execute a aplicação e aproveite as funcionalidades disponíveis.
 
+
+## 📅 Etapas do Projeto
+
+1. *Modelagem do Banco de Dados*: Criação dos modelos conceitual, lógico e físico.
+2. *Desenvolvimento da Aplicação*: Implementação das operações CRUD.
+3. *Entrega*: Publicação do projeto no GitHub com código-fonte e documentação completa.
+
+---
+
+Desenvolvido por 
+- Débora Cristina Silva Ferreira
+- Filipe Silva da Fonseca
+- Samantha Yumi Tanaka
+- Vinicios Trindade Costa
+- Wictor Emanoel Ponte Menezes
 
