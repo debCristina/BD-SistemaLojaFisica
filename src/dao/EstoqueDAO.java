@@ -1,12 +1,12 @@
 package dao;
 
+import model.Estoque;
 import util.ConexaoUtil;
 import model.Estoque;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EstoqueDAO {
     private ConexaoUtil conexao;
@@ -18,24 +18,42 @@ public class EstoqueDAO {
     }
 
     public void inserir(Estoque estoque) {
-        String sql = "INSERT INTO estoque(id_produto, quantidade) VALUES (?, ?)";
+        String sql = "INSERT INTO estoques(id_produto, quantidade) VALUES (?, ?)";
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
             stmt.setInt(1, estoque.getIdProduto());
             stmt.setInt(2, estoque.getQuantidade());
             stmt.execute();
-            System.out.println("Estoque inserido com sucesso");
         } catch (SQLException e) {
             System.out.println("Erro ao inserir estoque: " + e.getMessage());
         }
     }
 
-    public Estoque buscarPorId(int idEstoque) {
-        Estoque estoque = null;
-        String sql = "SELECT * FROM estoque WHERE id_estoque = ?";
+    public List<Estoque> listar() {
+        List<Estoque> produtosEstoque = new ArrayList<>();
+        String sql = "SELECT * FROM estoques";
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
-            stmt.setInt(1, idEstoque);
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                Estoque produtoEstoque = new Estoque();
+                produtoEstoque.setIdEstoque(rs.getInt("id_estoque"));
+                produtoEstoque.setIdProduto(rs.getInt("id_produto"));
+                produtoEstoque.setQuantidade(rs.getInt("quantidade"));
+                produtosEstoque.add(produtoEstoque);
+            }
+        } catch (SQLException e) {
+            System.out.println("Erro ao listar estoques: " + e.getMessage());
+        }
+        return produtosEstoque;
+    }
+
+    public Estoque buscarPorId(int idProduto) {
+        Estoque estoque = null;
+        String sql = "SELECT * FROM estoques WHERE id_produto= ?";
+        try {
+            PreparedStatement stmt = this.conn.prepareStatement(sql);
+            stmt.setInt(1, idProduto);
             ResultSet rs = stmt.executeQuery();
             if (rs.next()) {
                 estoque = new Estoque();
@@ -50,26 +68,24 @@ public class EstoqueDAO {
     }
 
     public void atualizar(Estoque estoque) {
-        String sql = "UPDATE estoque SET id_produto = ?, quantidade = ? WHERE id_estoque = ?";
+        String sql = "UPDATE estoques SET quantidade = ? WHERE id_estoque = ? AND id_produto = ?";
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
-            stmt.setInt(1, estoque.getIdProduto());
-            stmt.setInt(2, estoque.getQuantidade());
-            stmt.setInt(3, estoque.getIdEstoque());
+            stmt.setInt(1, estoque.getQuantidade());
+            stmt.setInt(2, estoque.getIdEstoque());
+            stmt.setInt(3, estoque.getIdProduto());
             stmt.executeUpdate();
-            System.out.println("Estoque atualizado com sucesso");
         } catch (SQLException e) {
             System.out.println("Erro ao atualizar estoque: " + e.getMessage());
         }
     }
 
-    public void deletar(int idEstoque) {
-        String sql = "DELETE FROM estoque WHERE id_estoque = ?";
+    public void remover(int idProduto) {
+        String sql = "DELETE FROM estoques WHERE id_produto = ?";
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
-            stmt.setInt(1, idEstoque);
+            stmt.setInt(1, idProduto);
             stmt.execute();
-            System.out.println("Estoque deletado com sucesso");
         } catch (SQLException e) {
             System.out.println("Erro ao deletar estoque: " + e.getMessage());
         }

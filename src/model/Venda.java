@@ -1,7 +1,9 @@
 package model;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class Venda {
     private int idVendas;
@@ -9,7 +11,7 @@ public class Venda {
     private int idCliente;
     private int idProduto;
     private float total;
-    private LocalDateTime dataVenda;
+    private String dataVenda;
 
     public int getIdVendas() {
         return idVendas;
@@ -51,11 +53,11 @@ public class Venda {
         this.total = total;
     }
 
-    public LocalDateTime getDataVenda() {
+    public String getDataVenda() {
         return dataVenda;
     }
 
-    public void setDataVenda(LocalDateTime dataVenda) {
+    public void setDataVenda(String dataVenda) {
         this.dataVenda = dataVenda;
     }
 }

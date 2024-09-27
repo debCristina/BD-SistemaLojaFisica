@@ -5,16 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc9a33c-b6ae-42f2-b8db-adbaf73f6b3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dao/ClienteDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/EstoqueDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/FuncionarioDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/VendaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuEstoque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuFuncionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuProduto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuVenda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/conexao/ConexaoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/ConexaoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ProdutoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ClienteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ClienteDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/EstoqueDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/EstoqueDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/FuncionarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/FuncionarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ProdutoDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/VendaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/VendaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Estoque.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Venda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/ConexaoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/ConexaoUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,30 +38,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2mUWXMFWgXmp2Ki0JuJzlk0WPrk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/debor/Downloads/jar_files/jar_files/mysql-connector-java-8.0.11.jar",
-    "onboarding.tips.debug.path": "C:/Users/debor/Documents/CRUD-JAVA/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/debor/Downloads/jar_files/jar_files/mysql-connector-java-8.0.11.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/debor/Documents/CRUD-JAVA/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\debor\Documents\CRUD-JAVA\lib" />

@@ -1,18 +1,18 @@
 package model;
 
 public class Produto {
-    private int id;
+    private int idProduto;
     private float preco;
     private String nome;
 
     private int quantidade;
 
-    public int getId() {
-        return id;
+    public int getIdProduto() {
+        return idProduto;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdProduto(int id) {
+        this.idProduto = id;
     }
 
     public String getNome() {

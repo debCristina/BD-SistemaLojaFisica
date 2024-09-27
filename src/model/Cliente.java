@@ -2,7 +2,7 @@ package model;
 
 public class Cliente {
     private int idCliente;
-    private int telefone;
+    private String telefone;
     private String nome;
 
     public int getIdCliente() {
@@ -13,11 +13,11 @@ public class Cliente {
         this.idCliente = idCliente;
     }
 
-    public int getTelefone () {
+    public String getTelefone () {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
