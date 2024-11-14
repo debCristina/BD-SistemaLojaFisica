@@ -48,7 +48,7 @@ Este projeto foi desenvolvido para otimizar a gestão de uma loja física, com f
    
  ```
 bash
-   git clone https://github.com/debCristina/literalura.git
+   git clone https://github.com/debCristina/BD-SistemaLojaFisica.git
 ```
 2. Importe execute o script SQL localizado na pasta /database para estruturar as tabelas e dados iniciais.
    
